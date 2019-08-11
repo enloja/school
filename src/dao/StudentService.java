@@ -7,7 +7,12 @@ public class StudentService implements StudentInterfaceDao {
     @Override
     public void showLastName(Student student) {
 
-        System.out.println(student.getLastName());
+        if(student.getLastName()== null){
+            System.out.println("The last Name is empty");
+        }
+        else {
+            System.out.println(student.getLastName());
+        }
     }
 
     @Override
@@ -15,5 +20,5 @@ public class StudentService implements StudentInterfaceDao {
         System.out.println("LastName : "+ student.getLastName() + ", FirstName: " + student.getFirstName());
     }
 
-    
+
 }

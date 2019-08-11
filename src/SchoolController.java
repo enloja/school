@@ -9,7 +9,7 @@ public class SchoolController {
         StudentService service = new StudentService();
 
 
-        Student eddy = new Student("Gaspard", "Eddy", 53, "24-01-1985");
+        Student eddy = new Student(null, "Eddy", 53, "24-01-1985");
         service.showLastName(eddy);
         service.showFullName(eddy);
 
